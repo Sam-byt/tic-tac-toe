@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color:#FFDE03;
+}
+nav {
+    color: #0336FF;
+    min-height: max-content;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+nav ul {
+    height: 8vh;
+    min-height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+nav ul li {
+    font-size: 5vh;
+    font-weight: bolder;
+}
+
+main {
+    padding: 1vw;
+    min-height: 92vh;
+}
+
+.welcome {
+    text-align: center;
+    font-size: 2.5vw;
+    animation: o 2s ease-in-out 1 ;
+}
+
+@keyframes o {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.myCross {
+    z-index: 2;
+    height: 3px;
+    width: 40vw;
+}
+
+
+.gameContainer {
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2vh;
+}
+
+.container {
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.boxText {
+    font-size: 5vw;
+    font-weight:300;
+}
+
+.myFont {
+    font-family: 'Truculenta', sans-serif;
+    letter-spacing: 0.1em;
+}
+
+.reset_btn img{
+    max-width:4vw;
+}
+
+#reset {
+    border: none;
+    background: none;
+}
+
+.myContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.finbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes resetAnimation {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes resetAnimation360 {
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+@keyframes crossing {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+.info {
+    font-size: 3vw;
+}
+
+.posa {
+    position: absolute;
+}
+
+.posr {
+    position: relative;
+}
+
+
+.posf {
+    position: fixed;
+}
+
+.posi {
+    position: initial;
+}
+
+.posih {
+    position: inherit;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner {
+    font-size: 5vw;
+    color:#FF1744;
+    font-weight: bolder;
+}
+
+@keyframes f1 {
+    0% {
+        font-size: 0vw;
+    }
+
+    100% {
+        font-size: 5vw;
+    }
+}
+
+@keyframes f2 {
+    0% {
+        font-size: 0vw;
+    }
+
+    100% {
+        font-size: 5vw;
+    }
+}
+
+#play_again {
+    visibility: hidden;
+    padding: 1vw;
+    border: 3px solid #3700B3;
+    border-radius: 4px;
+    background: none;
+    color: #09AF00;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+
+@media screen and (max-width:500px) {
+    .gameContainer{
+        min-height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        align-items: center;
+    }
+}

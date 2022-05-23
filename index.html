@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz@12..72&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>MyTicTacToe</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="welcome myFont" id="welcome">
+            <h1>Welcome to Tic Tac Toe!</h1>
+        </div>
+        <div class="gameContainer myFont">
+            <div class="myContainer">
+                <div class="info" id="turn">Turn for X!</div>
+                <div class="finbox">
+                    <div class="posr container">
+                        <div class="box" id="00"><span class="boxText"></span></div>
+                        <div class="box" id="01"><span class="boxText"></span></div>
+                        <div class="box" id="02"><span class="boxText"></span></div>
+                        <div class="box" id="10"><span class="boxText"></span></div>
+                        <div class="box" id="11"><span class="boxText"></span></div>
+                        <div class="box" id="12"><span class="boxText"></span></div>
+                        <div class="box" id="20"><span class="boxText"></span></div>
+                        <div class="box" id="21"><span class="boxText"></span></div>
+                        <div class="box" id="22"><span class="boxText"></span></div>
+                    </div>
+                    <div class="posa myCross" id="myLine"></div>
+                </div>
+            </div>
+            <div class="gameInfo myFont">
+                <button class="reset_btn" id="reset" onclick="myButton()"><img
+                        src="https://img.icons8.com/ios-glyphs/90/000000/recurring-appointment.png" />
+                </button>
+                <div id="winner"></div>
+                <div class="playagain myFont">
+                    <button id="play_again" onclick="playAgain()">Play Again!</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
